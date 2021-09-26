@@ -1,0 +1,45 @@
+// .site-layout-content {
+//     min-height: 280px;
+//     padding: 24px;
+//     background: #fff;
+//     }
+//     #components-layout-demo-top .logo {
+//     float: right;
+//     width: 120px;
+//     height: 31px;
+//     margin: 16px 24px 16px 0;
+//     background: rgba(255, 255, 255, 0.3);
+//     }
+//     .ant-row-rtl #components-layout-demo-top .logo {
+//     float: left;
+//     margin: 16px 0 16px 24px;
+//     }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #F47714;
+}
+
+.menu {
+    background: #F47714;
+    color: white;
+}
+
+ .logo {
+    border: black;
+    height :fit-content
+    
+}
+
+.btn-out {
+    background: #04549C;
+    color : white;
+    border: 1px solid #04549C;
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+    
+}

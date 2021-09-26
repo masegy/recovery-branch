@@ -1,0 +1,130 @@
+$mainBlue: #2B6CAA;
+$mainOrange: #FA7714;
+$mobileBreakPoint: 600px;
+
+.detail-title{
+    text-align: center;
+    color: $mainBlue;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.detail-content{
+    display: flex;
+    margin-top: 32px;
+    align-items: center;
+    justify-content: center;
+
+    .bank-info, .queue-wrapper{
+        margin: 32px 64px;
+    }
+
+    .bank-info{
+        .bank-wrapper{
+            margin-bottom: 16px;
+
+            .bank-title{
+                color: #000;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .bank-name{
+                color: $mainBlue;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .queue-wrapper{
+        .queue-content{
+            width: 200px;
+            height: 200px;
+            background-color: $mainBlue;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+            .number{
+                font-size: 48px;
+                margin: 0;
+            }
+
+            .number-info{
+                margin: 0;
+                font-size: 18px;
+                
+            }
+        }
+    }
+
+    @media only screen and (max-width: $mobileBreakPoint) {
+        flex-direction: column-reverse;
+
+        .bank-info, .queue-wrapper{
+            margin: 0;
+        }
+    }
+}
+
+.button-wrapper{
+    padding: 32px 64px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    .full-btn{
+        background-color: $mainOrange;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        padding: 8px 16px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+
+        &:hover{
+            background-color: rgba($color: $mainOrange, $alpha: 0.8);
+        }
+        
+    }
+
+    .outlined-btn{
+        border: 2px solid $mainOrange;
+        background-color: #fff;
+        border-radius: 10px;
+        color: #000;
+        padding: 8px 16px;
+        cursor: pointer;
+
+        transition: .2s ease-in-out;
+
+        &:hover{
+            background-color: $mainOrange;
+            color: #fff;
+        }
+    }
+
+    @media only screen and (max-width: $mobileBreakPoint) {
+        flex-direction: column;
+
+        .outlined-btn, .full-btn{
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.text-warning{
+    color: red;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 64px;
+
+    @media only screen and (max-width: $mobileBreakPoint) {
+        padding: 0;
+        text-align: center;
+    }
+}

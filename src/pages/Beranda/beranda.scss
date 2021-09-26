@@ -1,0 +1,33 @@
+.img-beranda {
+    display: block;
+     margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.text-1 {
+    text-align: center;
+    font-weight: bold;
+}
+.text-2 {
+    text-align: center;
+
+
+}
+
+.btn-1 {
+     display: block;
+     margin-left: auto;
+    margin-right: auto;
+    background-color: #F47714;
+    color: white;
+    margin-bottom: 30px;
+    &:hover{
+        background: white;
+        color: #F47714;
+        border: 1px solid #F47714 ;
+        
+        }
+        
+    
+}
