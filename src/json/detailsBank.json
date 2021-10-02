@@ -1,0 +1,12 @@
+{
+    "status": 200,
+    "message": "berhasil",
+    "data": {
+        "id_bank": 1,
+        "nama_bank": "BANK KCP SOREANG",
+        "alamat": "Jl.Soreang No.180",
+        "tanggal_antrian_saat_ini": "07/08/2021",
+        "no_antrian_saat_ini": 20,
+        "waktu_pelayanan": "09.30"
+    }
+}
